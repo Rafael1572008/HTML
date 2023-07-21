@@ -74,6 +74,14 @@ site dos tipos de input
 <input type="submit"> enviar
 
 ===CSS===
+===Caixas no css===
+///margin/// /margem
+///border/// /borda
+///padding/// /preenchimento
+///content/// /conteúdo
+----repete----
+
+
 <style> dentro da tag <herd>
 p{color: green;} exemplo do css
 font-family /altera a font
@@ -87,10 +95,25 @@ text-indent: 30px; /* tamanho da margem da primeira linha do texto */
 font-weight:bold; /deixa a letra mais grossa
 text-align: center; /centralizar o texto
 background-color: cor; /cor de texto
-
-
-
-
-
- 
-
+background-size:widhtpx heightpx; /colocar imagem no css
+background-attachment:fixed; /deixa a imagem fixa
+background-size:contain; /imagem se adapta quando rola
+background-repeat:no-repeat; /imagem não repete
+background-repeat:repeat; /imagem repete
+background-repeat:repeat-x; /imagem repete na horizontal
+background-repeat:repeat-y; /imagem repete na vertical
+div /criar caixas
+div { height: 100px; width: 100px;display: inline-block} /coloca a proxima div ao lado 
+border: 1px solid red; /Espesura da borda e sua cor
+border-width: 1px 2px 1px 2px; /Dimenssões da borda
+border-style: dotted solid; /Tipo de borda
+background-color: #48CFE0; /cor do que esta dentro da borda
+tipos de bordas url(https://eadcampus.spo.ifsp.edu.br/pluginfile.php/1019712/mod_resource/content/1/AW1_CSS_ModeloCaixa.pdf)
+border-radius: 200px; /Arredondamento de cantos da borda
+margin: 20px 10px 20px 30px /A margem
+padding: 200px; /Area da div
+box-shadow: 10px 20px grey; /sombra na div
+border-image: url("url.png") 30 round; /colocar imagem na ponta da borda
+border-width: thin ou thick /deixa com uma borada fina, porem q ocupa uma área maior
+border-style: dotteed solid; /A propriedade border-style define o estilo da borda do elemento. Pode ser solid (sólida), dotted (pontilhada) ou dashed (tracejada).
+margin:auto; /Centraliza a margem.
