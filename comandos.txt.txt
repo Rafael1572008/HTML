@@ -95,13 +95,14 @@ text-indent: 30px; /* tamanho da margem da primeira linha do texto */
 font-weight:bold; /deixa a letra mais grossa
 text-align: center; /centralizar o texto
 background-color: cor; /cor de texto
-background-size:widhtpx heightpx; /colocar imagem no css
+background-image:url(url.jpeg); /colocar imagem no css
 background-attachment:fixed; /deixa a imagem fixa
-background-size:contain; /imagem se adapta quando rola
+background-size: contain; /imagem se adapta quando rola
 background-repeat:no-repeat; /imagem não repete
 background-repeat:repeat; /imagem repete
 background-repeat:repeat-x; /imagem repete na horizontal
 background-repeat:repeat-y; /imagem repete na vertical
+background-position:...; /config a posilçao da imagem
 div /criar caixas
 div { height: 100px; width: 100px;display: inline-block} /coloca a proxima div ao lado 
 border: 1px solid red; /Espesura da borda e sua cor
@@ -117,3 +118,39 @@ border-image: url("url.png") 30 round; /colocar imagem na ponta da borda
 border-width: thin ou thick /deixa com uma borada fina, porem q ocupa uma área maior
 border-style: dotteed solid; /A propriedade border-style define o estilo da borda do elemento. Pode ser solid (sólida), dotted (pontilhada) ou dashed (tracejada).
 margin:auto; /Centraliza a margem.
+background-size: cover; /adapta a imagem a janela, porem cortada
+background-position: center; /posiciona a imagem no centro
+line-height: 500px; /define a altura do texto
+---filtros---
+ filter: filtro(10%)
+•grayscale()
+•blur()
+•brightness()
+•contrast()
+•invert()
+•opacity()
+•saturate()
+•sepia()
+•hue-rotate()
+•drop-shadow()
+cursor: /muda o tipo de cursor
+
+Layout
+///    header    ///
+///      /
+Nav    content   ///
+///      /
+///    footer   ///
+
+header: Ex: nome da empresa, contato, menu de navegação.
+
+nav:Ex: Ações principais do site, dificilmente é alterada quando muda de página.
+
+footer:Ex: Pode colocar o mesmo em todas as páginas ou em cada uma colocar um diferente.
+
+content:Ex: Conteúdo principal do site.
+
+<section>: Agrupa conteúdo relacionado, criando seções temáticas na página.
+<article>: Define um conteúdo independente e completo, como uma postagem de blog ou notícia.
+<aside>: Contém conteúdo relacionado, mas secundário em relação ao conteúdo principal da página, como uma barra lateral ou anúncio.
+<span>: Elemento em linha para estilização de conteúdo sem significado próprio.
