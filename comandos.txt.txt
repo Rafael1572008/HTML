@@ -31,8 +31,7 @@
    <dd> texto recuado
 
 ===Link===
- <a href="link"_blank">nome do q vai aparece</a> colocar link
-
+<a href="link"_blank">nome do q vai aparece</a> colocar link
 <body link=“cor" vlink=“cor" alink=“cor"> alterar cor do link dentro do body
 
 ===imagem===
@@ -41,6 +40,7 @@
 <a href="url"_blank" ><img src='mae.jpeg' ></a> imagem com link
 <img src='url.jpeg’ title="titulo" height=42 wight=42 > width: largura, height: aultura
 <img src="mae.jpeg" border=4 > borda na imegm
+< img src="img" alt="gatoo height=100px> ajuta para o tamanho da imagem original
 
 ===tabelas====
 entre os <body>
@@ -83,74 +83,94 @@ site dos tipos de input
 
 
 <style> dentro da tag <herd>
-p{color: green;} exemplo do css
-font-family /altera a font
-tipos de font url(chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://eadcampus.spo.ifsp.edu.br/pluginfile.php/1018508/mod_resource/content/1/AW1_CSS_Parte1.pdf)
-color:cor ou #00000 /dar cor
-text-align: right; deixar o texto a direita da tela
-line-height: 15px; /* tamanho da altura de cada linha */ 
-letter-spacing: 50px; /* tamanho do espaço entre cada letra */ 
-word-spacing: 60px; /* tamanho do espaço entre cada palavra */ 
-text-indent: 30px; /* tamanho da margem da primeira linha do texto */ 
-font-weight:bold; /deixa a letra mais grossa
-text-align: center; /centralizar o texto
-background-color: cor; /cor de texto
-background-image:url(url.jpeg); /colocar imagem no css
-background-attachment:fixed; /deixa a imagem fixa
-background-size: contain; /imagem se adapta quando rola
-background-repeat:no-repeat; /imagem não repete
-background-repeat:repeat; /imagem repete
-background-repeat:repeat-x; /imagem repete na horizontal
-background-repeat:repeat-y; /imagem repete na vertical
-background-position:...; /config a posilçao da imagem
-div /criar caixas
-div { height: 100px; width: 100px;display: inline-block} /coloca a proxima div ao lado 
-border: 1px solid red; /Espesura da borda e sua cor
-border-width: 1px 2px 1px 2px; /Dimenssões da borda
-border-style: dotted solid; /Tipo de borda
-background-color: #48CFE0; /cor do que esta dentro da borda
-tipos de bordas url(https://eadcampus.spo.ifsp.edu.br/pluginfile.php/1019712/mod_resource/content/1/AW1_CSS_ModeloCaixa.pdf)
-border-radius: 200px; /Arredondamento de cantos da borda
-margin: 20px 10px 20px 30px /A margem
-padding: 200px; /Area da div
-box-shadow: 10px 20px grey; /sombra na div
-border-image: url("url.png") 30 round; /colocar imagem na ponta da borda
-border-width: thin ou thick /deixa com uma borada fina, porem q ocupa uma área maior
-border-style: dotteed solid; /A propriedade border-style define o estilo da borda do elemento. Pode ser solid (sólida), dotted (pontilhada) ou dashed (tracejada).
-margin:auto; /Centraliza a margem.
-background-size: cover; /adapta a imagem a janela, porem cortada
-background-position: center; /posiciona a imagem no centro
-line-height: 500px; /define a altura do texto
----filtros---
- filter: filtro(10%)
-•grayscale()
-•blur()
-•brightness()
-•contrast()
-•invert()
-•opacity()
-•saturate()
-•sepia()
-•hue-rotate()
-•drop-shadow()
-cursor: /muda o tipo de cursor
+   ---paragrafo---
+   p{color: green;} exemplo do css
+   font-family /altera a font
+   tipos de font url(chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://eadcampus.spo.ifsp.edu.br/pluginfile.php/1018508/mod_resource/content/1/AW1_CSS_Parte1.pdf)
+   color:cor ou #00000 /dar cor
+   text-align: right; deixar o texto a direita da tela
+   line-height: 15px; /* tamanho da altura de cada linha */ 
+   letter-spacing: 50px; /* tamanho do espaço entre cada letra */ 
+   word-spacing: 60px; /* tamanho do espaço entre cada palavra */ 
+   text-indent: 30px; /* tamanho da margem da primeira linha do texto */ 
+   font-weight:bold; /deixa a letra mais grossa
+   text-align: center; /centralizar o texto
+   background-color: cor; /cor de texto
+   line-height: 500px; /define a altura do texto
 
-Layout
-///    header    ///
+   ---imagem---
+   background-image:url(url.jpeg); /colocar imagem no css
+   background-attachment:fixed; /deixa a imagem fixa
+   background-size: contain; /imagem se adapta quando rola
+   background-repeat:no-repeat; /imagem não repete
+   background-repeat:repeat; /imagem repete
+   background-repeat:repeat-x; /imagem repete na horizontal
+   background-repeat:repeat-y; /imagem repete na vertical
+   background-position:...; /config a posilçao da imagem
+   background-size: cover; /adapta a imagem a janela, porem cortada
+   background-position: center; /posiciona a imagem no centro
+   img:hover{-webkit-transform: scale(0.5) /transforma o tamanho da imagem ao passar o mouse
+   img:hover{-webkit-filter: blur(5px);} /bora imagem ao passar o mouse
+   img:hover{-webkit-filter: drop-shadow(15px 10px 5px rgba(245, 0, 0, 0.979));} /criar sombras ao passar o mouse
+   img:hover{border: 10px solid #136497; border-radius: 50%;} /cria borda ao passar o mouse
+
+   ---ajustar div---
+   div /criar caixas
+   div { height: 100px; width: 100px;display: inline-block} /coloca a proxima div ao lado
+   margin: 20px 10px 20px 30px /A margem
+   padding: 200px; /Area da div
+   box-shadow: 10px 20px grey; /sombra na div
+   margin:auto; /Centraliza a margem.
+
+   ---borda--- 
+   border: 1px solid red; /Espesura da borda e sua cor
+   border-width: 1px 2px 1px 2px; /Dimenssões da borda
+   border-style: dotted solid; /Tipo de borda
+   background-color: #48CFE0; /cor do que esta dentro da borda
+   -tipos de bordas url(https://eadcampus.spo.ifsp.edu.br/pluginfile.php/1019712/mod_resource/content/1/AW1_CSS_ModeloCaixa.pdf)
+   border-radius: 200px; /Arredondamento de cantos da borda
+   border-image: url("url.png") 30 round; /colocar imagem na ponta da borda
+   border-width: thin ou thick /deixa com uma borada fina, porem q ocupa uma área maior (uma boa área invisivel)
+   border-style: dotteed solid; /A propriedade border-style define o estilo da borda do elemento. Pode ser solid (sólida), dotted (pontilhada) ou dashed (tracejada).
+
+
+
+
+   ---filtros---
+   filter: filtro(10%)
+   •grayscale()
+   •blur()
+   •brightness()
+   •contrast()
+   •invert()
+   •opacity()
+   •saturate()
+   •sepia()
+   •hue-rotate()
+   •drop-shadow()
+
+   ---curso---
+   cursor: /muda o tipo de cursor
+
+
+   ---Layout2---
+///    header           ///
 ///      /
-Nav    content   ///
+Nav    content (main)   ///
 ///      /
-///    footer   ///
+///    footer          ///
 
 header: Ex: nome da empresa, contato, menu de navegação.
-
 nav:Ex: Ações principais do site, dificilmente é alterada quando muda de página.
-
 footer:Ex: Pode colocar o mesmo em todas as páginas ou em cada uma colocar um diferente.
-
 content:Ex: Conteúdo principal do site.
 
 <section>: Agrupa conteúdo relacionado, criando seções temáticas na página.
 <article>: Define um conteúdo independente e completo, como uma postagem de blog ou notícia.
 <aside>: Contém conteúdo relacionado, mas secundário em relação ao conteúdo principal da página, como uma barra lateral ou anúncio.
 <span>: Elemento em linha para estilização de conteúdo sem significado próprio.
+
+   ---ajuste dentro do layout2---
+   {column-count:2;} /colocar em duas colunas
+   #cabecalho{} /id pode ser usado apenas uma vez (ex: <main id="cabecalho"
+   .caixa{} /class podem ser reutilizadas (ex: <main class="caixa"
