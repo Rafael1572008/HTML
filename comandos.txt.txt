@@ -41,6 +41,7 @@
 <img src='url.jpeg’ title="titulo" height=42 wight=42 > width: largura, height: aultura
 <img src="mae.jpeg" border=4 > borda na imegm
 < img src="img" alt="gatoo height=100px> ajuta para o tamanho da imagem original
+<link rel="icon" href="sinete.png"> /colocar imgame na aba
 
 ===tabelas====
 entre os <body>
